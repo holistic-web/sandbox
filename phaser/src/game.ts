@@ -5,9 +5,13 @@ let player;
 let stars;
 let platforms;
 let cursors;
+let score: number = 0;
+let scoreText;
 
 const collectStar = (p, star) => {
 	star.disableBody(true, true);
+	score += 10;
+	scoreText.setText(`Score: ${score}`);
 };
 
 export default class Sandbox extends Phaser.Scene {
@@ -72,6 +76,8 @@ export default class Sandbox extends Phaser.Scene {
 			child.setBounceY(Phaser.Math.FloatBetween(0.4, 0.8));
 
 		});
+
+		scoreText = this.add.text(16, 16, 'score: 0', { fontSize: '32px', fill: '#000' });
 
 		this.physics.add.collider(player, platforms);
 		this.physics.add.collider(stars, platforms);
