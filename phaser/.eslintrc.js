@@ -26,6 +26,9 @@ module.exports = {
 		'class-methods-use-this': 0,
 
 		// allow use of "Phaser.Math.FloatBetween"
-		'new-cap': 0
+		'new-cap': 0,
+
+		// sometimes shadowing a variable makes sense
+		'no-shadow': 0
 	}
 };
