@@ -23,6 +23,9 @@ module.exports = {
 		'no-new': 0,
 
 		// we don't need to reference 'this' in our class names
-		'class-methods-use-this': 0
+		'class-methods-use-this': 0,
+
+		// allow use of "Phaser.Math.FloatBetween"
+		'new-cap': 0
 	}
 };
