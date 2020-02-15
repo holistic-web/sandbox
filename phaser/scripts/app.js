@@ -1,6 +1,7 @@
 const phaser = require('phaser');
 const preload = require('./preload');
 const create = require('./create');
+const update = require('./update');
 
 const config = {
 	type: Phaser.AUTO,
@@ -15,7 +16,8 @@ const config = {
     },
 	scene: {
 		preload,
-		create
+		create,
+		update
 	}
 };
 
