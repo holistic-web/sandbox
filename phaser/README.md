@@ -7,5 +7,5 @@ This sandbox is currently inspired by this [tutorial](https://phaser.io/tutorial
 To serve this app, run:
 ```
 npm install
-npm run serve
+npm run start
 ```
