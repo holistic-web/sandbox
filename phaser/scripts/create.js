@@ -45,4 +45,7 @@ module.exports = () => {
 		    frameRate: 10,
 		    repeat: -1
 		});
+
+		//Create keyboard input mapping
+		cursors = this.input.keyboard.createCursorKeys();
 };

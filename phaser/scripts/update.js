@@ -1,6 +1,4 @@
 module.exports = () => {
-		
-	cursors = this.input.keyboard.createCursorKeys();
 
 	if (cursors.left.isDown)
 	{
