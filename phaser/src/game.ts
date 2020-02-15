@@ -1,6 +1,7 @@
+/* global Phaser */
 import 'phaser';
 
-export default class Sandbox extends Phaser.Scene { // eslint-disable-line no-undef
+export default class Sandbox extends Phaser.Scene {
 	constructor() {
 		super('Sandbox');
 	}
@@ -40,4 +41,4 @@ const config = {
 	scene: Sandbox
 };
 
-const game = new Phaser.Game(config);
+new Phaser.Game(config);
