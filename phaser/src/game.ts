@@ -1,35 +1,78 @@
 /* global Phaser */
 import 'phaser';
 
+let platforms;
+let player;
+let cursors;
+
 export default class Sandbox extends Phaser.Scene {
 	constructor() {
 		super('Sandbox');
 	}
 
 	preload() {
-		this.load.image('logo', 'assets/phaser3-logo.png');
-		this.load.image('libs', 'assets/libs.png');
-		this.load.glsl('bundle', 'assets/plasma-bundle.glsl.js');
-		this.load.glsl('stars', 'assets/starfields.glsl.js');
+		this.load.image('sky', 'assets/sky.png');
+		this.load.image('ground', 'assets/platform.png');
+		this.load.image('star', 'assets/star.png');
+		this.load.image('bomb', 'assets/bomb.png');
+		this.load.spritesheet('dude', 'assets/dude.png', { frameWidth: 32, frameHeight: 48 });
 	}
 
 	create() {
-		this.add.shader('RGB Shift Field', 0, 0, 800, 600).setOrigin(0);
+		this.add.image(400, 300, 'sky');
 
-		this.add.shader('Plasma', 0, 412, 800, 172).setOrigin(0);
+		platforms = this.physics.add.staticGroup();
 
-		this.add.image(400, 300, 'libs');
+		platforms.create(400, 568, 'ground').setScale(2).refreshBody();
 
-		const logo = this.add.image(400, 70, 'logo');
+		platforms.create(600, 400, 'ground');
+		platforms.create(50, 250, 'ground');
+		platforms.create(750, 220, 'ground');
 
-		this.tweens.add({
-			targets: logo,
-			y: 350,
-			duration: 1500,
-			ease: 'Sine.inOut',
-			yoyo: true,
+		player = this.physics.add.sprite(100, 450, 'dude');
+
+		player.setBounce(0.2);
+		player.setCollideWorldBounds(true);
+
+		this.anims.create({
+			key: 'left',
+			frames: this.anims.generateFrameNumbers('dude', { start: 0, end: 3 }),
+			frameRate: 10,
 			repeat: -1
 		});
+
+		this.anims.create({
+			key: 'turn',
+			frames: [{ key: 'dude', frame: 4 }],
+			frameRate: 20
+		});
+
+		this.anims.create({
+			key: 'right',
+			frames: this.anims.generateFrameNumbers('dude', { start: 5, end: 8 }),
+			frameRate: 10,
+			repeat: -1
+		});
+
+		cursors = this.input.keyboard.createCursorKeys();
+
+		this.physics.add.collider(player, platforms);
+	}
+
+	update() {
+		if (cursors.left.isDown) {
+			player.setVelocityX(-160);
+			player.anims.play('left', true);
+		} else if (cursors.right.isDown) {
+			player.setVelocityX(160);
+			player.anims.play('right', true);
+		} else {
+			player.setVelocityX(0);
+			player.anims.play('turn');
+		}
+		if (cursors.up.isDown && player.body.touching.down) {
+			player.setVelocityY(-330);
+		}
 	}
 }
 
@@ -38,7 +81,14 @@ const config = {
 	backgroundColor: '#125555',
 	width: 800,
 	height: 600,
-	scene: Sandbox
+	scene: Sandbox,
+	physics: {
+		default: 'arcade',
+		arcade: {
+			gravity: { y: 300 },
+			debug: false
+		}
+	}
 };
 
 new Phaser.Game(config);

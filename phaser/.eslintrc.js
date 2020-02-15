@@ -19,6 +19,10 @@ module.exports = {
 		'@typescript-eslint',
 	],
 	rules: {
-		'no-new': 0
+		// we can use new for magic effects (for "Phaser")
+		'no-new': 0,
+
+		// we don't need to reference 'this' in our class names
+		'class-methods-use-this': 0
 	}
 };
