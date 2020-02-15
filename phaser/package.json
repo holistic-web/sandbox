@@ -1,19 +1,19 @@
 {
-  "name": "phaser-example",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "phaser": "^3.22.0"
-  },
-  "devDependencies": {
-    "@holistic-web/eslint-config-toolbox": "^1.0.5",
-    "http-server": "^0.12.1"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "serve": "http-server"
-  },
-  "author": "",
-  "license": "ISC"
+	"name": "phaser-example",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"dependencies": {
+		"phaser": "^3.22.0"
+	},
+	"devDependencies": {
+		"@holistic-web/eslint-config-toolbox": "^1.0.5",
+		"http-server": "^0.12.1"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"serve": "http-server"
+	},
+	"author": "",
+	"license": "ISC"
 }
