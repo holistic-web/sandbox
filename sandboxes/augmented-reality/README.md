@@ -10,6 +10,7 @@ _The links are now outdated but the files can be found within this folder._
 - [Web XR](https://github.com/holistic-web/ar-sandbox/blob/master/web-xr) - a-frame and 3d graphics in web
 - [AR.js](https://github.com/holistic-web/ar-sandbox/blob/master/ar-js) - AR space station tracker in js
 - [vue-experiment](https://github.com/holistic-web/ar-sandbox/blob/master/vue-experiment) - AR.js, aframe all wrapped up in vue
+- AR Bowling - Bowling... in AR!
 
 ## Next Steps
 - this list https://stemkoski.github.io/AR-Examples/ looks like a good place to look
