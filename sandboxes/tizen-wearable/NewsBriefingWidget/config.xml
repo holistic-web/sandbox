@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/NewsBriefingWidget" version="1.0.0" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:app-widget id="H8dQsPQL1e.NewsBriefingWidget.NewsBriefingWidget" primary="true">
+        <tizen:widget-label>News Briefing Widget</tizen:widget-label>
+        <tizen:widget-content src="widget/NewsBriefingWidget/index.html">
+            <tizen:widget-size preview="widget/NewsBriefingWidget/preview.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="H8dQsPQL1e.NewsBriefingWidget" package="H8dQsPQL1e" required_version="2.3.2"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <icon src="icon.png"/>
+    <name>NewsBriefingWidget</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/application.launch"/>
+    <tizen:profile name="wearable"/>
+</widget>

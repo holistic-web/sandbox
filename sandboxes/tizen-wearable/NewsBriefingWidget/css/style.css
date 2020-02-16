@@ -1,0 +1,256 @@
+html,
+body {
+    width: 360px;
+    height: 360px;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+.container {
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow-y: auto;
+}
+
+#title-in-add-article {
+    width: 360px;
+    height: 120px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 120px;
+    color: #0096ff;
+}
+
+#add-article-image {
+    text-align: center;
+    width: 98px;
+    height: 98px;
+}
+
+#add-article-button {
+    width: 360px;
+    height: 120px;
+    font-size: 26px;
+    line-height: 120px;
+    color: white;
+}
+
+#news-view {
+    background-color: #fff;
+    color: #000;
+}
+
+#news-extended {
+    background-color: #fff;
+    width: 360px;
+    text-align: center;
+    position: relative;
+}
+
+#news-body {
+    margin-top: 27px;
+    margin-bottom: 25px;
+    margin-left: 33px;
+    font-size: 28px;
+    width: 294px;
+}
+
+#news-body-cp {
+    font-size: 28px;
+    width: 294px;
+    margin-left: 33px;
+}
+
+#news-body-date {
+    font-size: 28px;
+    margin-bottom: 14px;
+    width: 294px;
+    margin-left: 33px;
+}
+
+#close-detail-news {
+    color: black;
+    height: 34px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 34px;
+    margin-top: 10px;
+}
+
+#more-option {
+    position: absolute;
+    width: 16px;
+    height: 36px;
+    margin-left: 327px;
+    margin-top: 162px;
+    background-color: rgba(0, 0, 0, 1);
+    -webkit-appearance: none;
+    -webkit-mask-image: url('../image/b_briefings_more_option.png');
+    -webkit-mask-size: 16px 36px;
+    -webkit-mask-repeat: no-repeat;
+    z-index: 1;
+}
+
+#news-image {
+    width: 360px;
+    height: 180px;
+    background: url('../image/loading.gif');
+    background-size: 60px 60px;
+    background-position: 150px 60px;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#news-title{
+    width: 294px;
+    height: 76px;
+    margin-top: 17px;
+    margin-left: 33px;
+    margin-bottom: 14px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    word-wrap:break-word;
+    font-size: 30px;
+    position: relative;
+}
+
+#news-category {
+    color: white;
+    width: 0;
+    height: 34px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 34px;
+    padding: 5px 7px;
+}
+
+#select-topic-button {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    margin-left: 50px;
+    margin-top: 20px;
+    opacity: 1;
+}
+
+#refresh-button {
+    position: absolute;
+    width: 68px;
+    height: 68px;
+    margin-left: 100px;
+    margin-top: 70px;
+    opacity: 1;
+}
+
+#more-option-view {
+    position: absolute;
+    opacity: 0.7;
+    width: 360px;
+    height: 360px;
+    top: 0;
+    left: 0;
+}
+
+#more-option-title {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    margin-left: 105px;
+    margin-top: 105px;
+    background-color: black;
+    font-size: 32px;
+    color: white;
+    border-radius: 50% 50%;    
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    opacity: 1;
+}
+
+#topic-title {
+    width: 360px;
+    height: 120px;
+    font-size: 40px;
+    line-height: 180px;
+    color: #0096ff;
+}
+
+#current-focus {
+    position: absolute;
+    border-radius: 50% 50%;
+    background-color: #0096ff;
+    width: 12px;
+    height: 12px;
+    margin-left: 230px;
+    margin-top: 90px;
+}
+
+.topics {
+    width: 360px;
+    height: 120px;    
+    align-items: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+}
+
+.select-topic-close-button {
+    width: 360px;
+    height: 120px;    
+    align-items: center;
+    justify-content: center;
+    display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    font-size: 24px;
+}
+
+.topic-name {
+    margin-left: 80px;
+    font-size: 24px;
+}
+
+input[type="checkbox"] {
+    margin-left: auto;
+    margin-right: 60px;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    -webkit-appearance: none;
+    -webkit-mask-image: url('../image/checkbox_bg.png');
+    -webkit-mask-size: 40px 40px;
+    -webkit-mask-repeat: no-repeat;
+    background-color: rgba(112, 186, 15, 1);
+}
+
+input[type="checkbox"]::after {
+    content: "";
+    -webkit-mask-image: url('../image/checkbox_check.png');
+    -webkit-mask-repeat: repeat;
+    -webkit-mask-position: center bottom;
+    background-color: white;
+    height: 0;
+    bottom: 0;
+    -webkit-mask-size: 100%;    
+}
+
+input[type="checkbox"]:checked::before {
+    -webkit-mask-image: none;
+    background: -webkit-radial-gradient(rgba(112, 186, 15, 1) 67%, transparent 71%, transparent) no-repeat;
+    background-size: 40px 40px;
+    opacity: 1;
+}
+
+input[type="checkbox"]:checked::after {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}

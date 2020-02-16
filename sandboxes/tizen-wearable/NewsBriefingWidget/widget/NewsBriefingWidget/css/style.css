@@ -1,0 +1,99 @@
+html,
+body {
+    width: 360px;
+    height: 360px;
+    margin: 0;
+    padding: 0;
+    font-family: BreezeSans;
+}
+
+.container {
+    background-color: #000;
+    color: #fff;
+    height: 100%;
+    width: 100%;
+    border-radius: 50% 50%;
+    text-align: center;
+}
+
+#news-logo {
+    width: 70px;
+    height: 70px;
+    margin-top: 78px;
+}
+
+#widget-title {
+    width: 316px;
+    height: 44px;
+    margin-left: 22px;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 34px;
+}
+
+#widget-subtitle {
+    width: 316px;
+    height: 22px;
+    margin-left: 22px;
+    text-align: center;
+    color: rgb(133, 133, 133);
+    font-size: 18px;
+}
+
+#start-button {
+    width: 240px;
+    height: 42px;
+    margin-left: 60px;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 32px;
+}
+
+#first-news-area {
+    position: absolute;
+    width: 291px;
+    height: 132px;
+    margin-left: 35px;
+    margin-top: 30px;
+}
+
+#first-news-title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+#second-news-area {
+    position: absolute;
+    width: 291px;
+    height: 132px;
+    margin-left: 35px;
+    margin-top: 162px;
+}
+
+#second-news-title {
+    font-size: 28px;
+    text-align: center;
+    padding-top: 8px;
+}
+
+.news-category {
+    width: 0;
+    height: 34px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 8px;
+    line-height: 34px;
+    padding: 5px 7px;
+}
+
+#news-count {
+    position: absolute;
+    width: 140px;
+    height: 66px;
+    margin-left: 110px;
+    margin-top: 294px;
+    line-height: 66px;
+    text-align: center;
+    font-size: 24px;
+}

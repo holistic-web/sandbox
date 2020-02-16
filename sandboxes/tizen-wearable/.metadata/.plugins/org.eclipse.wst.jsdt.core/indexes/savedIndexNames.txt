@@ -1,0 +1,13 @@
+INDEX VERSION 1.3+/Users/michaelhavey-fitzgerald/Documents/tizen/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+793317622.index
+2272286759.index
+1097137186.index
+388895798.index
+1705788254.index
+2892662408.index
+3151377807.index
+1952394247.index
+1672936889.index
+905713069.index
+3523059259.index
+3567232120.index

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/LocationTest" version="1.0.0" viewmodes="maximized">
+    <tizen:app-widget id="RQ1grOkqZr.LocationTest.LocationTest" primary="true">
+        <tizen:widget-label>Hello Web Widget!</tizen:widget-label>
+        <tizen:widget-content src="widget/LocationTest/index.html">
+            <tizen:widget-size preview="widget/LocationTest/preview.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="RQ1grOkqZr.LocationTest" package="RQ1grOkqZr" required_version="3.0"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <icon src="icon.png"/>
+    <name>LocationTest</name>
+    <tizen:privilege name="http://tizen.org/privilege/location"/>
+	<tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="wearable"/>
+    <access origin="*" subdomains="true"/>
+</widget>
