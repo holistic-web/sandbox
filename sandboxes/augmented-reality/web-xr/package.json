@@ -1,0 +1,16 @@
+{
+	"name": "web-xr",
+	"version": "1.0.0",
+	"description": "Web XR is the new module of javascript coming to all browsers very soon. In this project we will look at the tutorial here: https://webxrtutorials.com/an-intro-to-webxr/",
+	"main": "index.js",
+	"dependencies": {
+		"serve": "^11.0.0"
+	},
+	"devDependencies": {},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "serve ./"
+	},
+	"author": "",
+	"license": "ISC"
+}
